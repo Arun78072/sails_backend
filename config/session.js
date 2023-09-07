@@ -10,7 +10,9 @@
  */
 
 module.exports.session = {
-
+  cookie: {
+    secure: true,
+  },
   /***************************************************************************
   *                                                                          *
   * Session secret is automatically generated when your new app is created   *
@@ -35,5 +37,4 @@ module.exports.session = {
   // isSessionDisabled: function (req){
   //   return !!req.path.match(req._sails.LOOKS_LIKE_ASSET_RX);
   // },
-
 };
